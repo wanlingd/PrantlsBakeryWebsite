@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Wanling Ding">
+    <meta name="keywords" content="Prantl's Bakery">
+    <meta name="description" content="Prantl's Bakery Website">
+
+    <title>Welcome to Prantl's Bakery</title>
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css" />
+
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery.lightbox.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+<!-- for tabs -->
+<!-- adapted from jquery -->
+
+    <script>
+        $(function(){
+            $( "#tabs-s" ).tabs({
+                event: "mouseover"
+            });
+        });
+    </script>
+
+    <script>
+        $(function(){
+            $( "#tabs-d" ).tabs({
+                event: "mouseover"
+            });
+        });
+    </script>
+
+<!-- for charts -->
+<!-- adapted from http://jsfiddle.net/gh/get/library/pure/highcharts/highcharts/tree/master/samples/highcharts/demo/column-basic/ -->
+
+    <script type="text/javascript">
+        $(function() {
+            $('#container-graph').highcharts({
+
+                    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Popular times for Shadyside'
+    },
+
+    xAxis: {
+        title: {
+            text: 'Times'
+        },
+        categories: ['7am', '8am', '9am', '10am', '11am', '12am', '1pm', '2pm', '3pm', '4pm', '5pm'],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Average people visited per hour'
+        }
+    },
+    tooltip: {
+        valueSuffix: 'people per day (on average)'
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [{
+        name: 'Shadyside',
+        data: [10, 8, 24, 5, 7, 32, 16, 18, 27, 39, 32]
+
+    }]
+
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function() {
+            $('#container-graph2').highcharts({
+
+                    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Popular times for Downtown'
+    },
+
+    xAxis: {
+        title: {
+            text: 'Times'
+        },
+        categories: ['7am', '8am', '9am', '10am', '11am', '12am', '1pm', '2pm', '3pm', '4pm', '5pm'],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Average people visited per hour'
+        }
+    },
+    tooltip: {
+        valueSuffix: 'people per day (on average)'
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [{
+        name: 'Downtown',
+        data: [24, 12, 16, 8, 11, 19, 15, 18, 13, 21, 35]
+
+    }]
+
+            });
+        });
+    </script>
+
+
+
+</head>
+
+<body background="images/back2.jpg">
+
+    <div id="container">
+
+    <div id="logo">
+    <img src="images/logo.png" width="150" height="150" >
+    </div>
+
+    <div id="top_row">
+
+    <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="shadyside.html" class="selected">Store Info</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+        
+    </nav>
+
+    </div>
+
+
+
+    <div id="tabs-s">
+    <ul>
+        <li><a href="#tabs-s1">Shadyside Store Info</a></li>
+        <li><a href="#tabs-s2">Store Popular Times</a></li>
+    </ul>
+    <div id="tabs-s1">
+        <div id="content-shadyside">
+        <table border="4"> 
+
+            <tr>
+                <th colspan="2">Shadyside</th>
+            </tr>
+
+            <tr>
+                <td>Address</td>
+                <td>5525 Walnut Street, Pittsburgh, PA, 15232</td>
+            </tr>
+
+            <tr>
+                <td>Phone Number</td>
+                <td>412-621-2092</td>
+            </tr>
+
+            <tr>
+                <td>Email Address</td>
+                <td><a href="mailto:info@prantlsbakery.com">info@prantlsbakery.com</a></td>
+            </tr>  
+
+            <tr>
+                <td>Hours of Operation</td>
+                <td>Monday: 9am – 4pm<br/>Tuesday – Saturday: 7:30am – 6pm<br/>Sunday: 9am – 4pm</td>
+            </tr>
+
+            <tr>
+                <td>Photo</td>
+                <td><img src="images/shadyside.jpg" width="200" height="150"></td>
+            </tr>
+
+            <tr>
+                <td>Map</td>
+                <!-- adapted from https://www.google.com/maps/place/Prantl's+Bakery/@40.4516721,-79.9351037,17z/data=!3m1!4b1!4m5!3m4!1s0x8834f211aed70341:0x10db72884d553d04!8m2!3d40.451668!4d-79.932915 -->
+                <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.066185493172!2d-79.93510904982195!3d40.45167206133776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f211aed70341%3A0x10db72884d553d04!2sPrantl&#39;s+Bakery!5e0!3m2!1sen!2sus!4v1491179190261" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></td>
+            </tr>
+        </table>
+        </div>
+    </div>
+
+    <div id="tabs-s2">
+        <div id="container-graph"></div><br/>
+    </div>
+
+    </div>
+
+    <div id="tabs-d">
+    <ul>
+        <li><a href="#tabs-d1">Downtown Store Info</a></li>
+        <li><a href="#tabs-d2">Store Popular Times</a></li>
+    </ul>
+
+    <div id="tabs-d1">
+        <div id="content-downtown">
+        <table border="4"> 
+
+            <tr>
+                <th colspan="2">Downtown</th>
+            </tr>
+
+            <tr>
+                <td>Address</td>
+                <td>438 Market Street, Pittsburgh, PA 15222</td>
+            </tr>
+
+            <tr>
+                <td>Phone Number</td>
+                <td>412-471-6861</td>
+            </tr>
+
+            <tr>
+                <td>Email Address</td>
+                <td><a href="mailto:infoms@prantlsbakery.com">infoms@prantlsbakery.com</a></td>
+            </tr>  
+
+            <tr>
+                <td>Hours of Operation</td>
+                <td>Monday – Friday: 7am – 6pm<br/>Saturday: 9am – 4pm<br/>Sunday: 10am – 3pm</td>
+            </tr>
+
+            <tr>
+                <td>Photo</td>
+                <td><img src="images/downtown.jpg" width="200" height="150"></td>
+            </tr>
+
+            <tr>
+                <td>Map</td>
+                <!-- adapted from https://www.google.com/maps/place/Prantl's+Bakery/@40.4411356,-80.0042692,17z/data=!3m1!4b1!4m5!3m4!1s0x8834f15696baf219:0x9e8bccef10009784!8m2!3d40.4411315!4d-80.0020805 -->
+                <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.5421725433735!2d-80.00427454982237!3d40.44113556197886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f15696baf219%3A0x9e8bccef10009784!2sPrantl&#39;s+Bakery!5e0!3m2!1sen!2sus!4v1491180848251" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></td>
+            </tr>
+        </table>
+
+        </div>
+    </div>
+
+    <div id="tabs-d2">
+        <div id="container-graph2"></div><br/>
+    </div>
+
+
+
+    </div>
+
+
+  
+    <footer>
+
+    <img src="images/logofoot.png" width="10%" height="10%"><br/>
+    <a href="https://www.facebook.com/PrantlsBakery" target="_blank"><img src="images/facebook1.png" width="41" height="41"></a>
+    <a href="https://twitter.com/prantlsbakery" target="_blank"><img src="images/twitter.png" width="40" height="40"></a>
+    <a href="https://www.instagram.com/prantls_bakery/ target="_blank""><img src="images/instagram.png" width="42" height="42"></a>
+    <br/>&copy; Wanling Ding 2017<br/>
+    </footer>
+</div>
+  
+
+</body>
+
+</html>

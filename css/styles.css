@@ -1,0 +1,484 @@
+body {
+    background-size: 100%,100%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 100%;
+    line-height: 1.7em;
+    color: #000000;
+}
+
+
+
+#content h1 {
+    text-align: center;
+    padding: 30px;
+    font-size: 70px;
+    color: #00a665;
+}
+
+
+
+footer {
+    clear: both;
+    margin: 0;
+    padding: .5em;
+    color: #333333;
+    font-variant: small-caps;
+    font-size: .813em;
+    text-align: center;
+}
+
+/*#top_row header {
+    display: inline;
+    margin-left: 30px;
+    width: 150px;
+    border: 0;
+    padding: 0;
+}*/
+
+#logo {
+    display: inline;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+
+#top_row nav,
+#top_row nav ul,
+#top_row nav ul li,
+#top_row nav ul li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#top_row nav:after,
+#top_row nav > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+#top_row nav {
+    float: left;
+    margin-left:200px;
+    margin-top: -100px;
+
+  width: 40%;
+  border-bottom: 3px solid #00a665;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  line-height: 1;
+}
+
+
+
+#top_row nav ul {
+  background: transparent;
+}
+#top_row nav > ul > li {
+  float: left;
+}
+#top_row nav.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+#top_row nav.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+#top_row nav.align-right > ul > li {
+  float: right;
+}
+#top_row nav.align-right > ul > li > a {
+  margin-right: 0;
+  margin-left: -4px;
+}
+#top_row nav > ul > li > a {
+  z-index: 2;
+  padding: 18px 25px 12px 25px;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #444444;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  margin-right: -4px;
+}
+#top_row nav > ul > li.active > a,
+#top_row nav > ul > li:hover > a,
+#top_row nav > ul > li > a:hover {
+  color: #ffffff;
+}
+#top_row nav > ul > li > a:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 120%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  content: "";
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transform: perspective(5px) rotateX(2deg);
+  -webkit-transform-origin: bottom;
+  -moz-transform: perspective(5px) rotateX(2deg);
+  -moz-transform-origin: bottom;
+  transform: perspective(5px) rotateX(2deg);
+  transform-origin: bottom;
+}
+#top_row nav > ul > li.active > a:after,
+#top_row nav > ul > li:hover > a:after,
+#top_row nav > ul > li > a:hover:after {
+  background: #00a665;
+}
+
+#top_row nav a.selected {
+    color: #00a665;
+}
+
+
+
+#content-about {
+    float: left;
+    width: 50%;
+    padding: 1em;
+    border-right: 10px;
+    margin-left: 50px;
+}
+
+#content-about h4 {
+    font-size: 1em;
+    text-decoration: none;
+    margin: 30px auto;
+    font-weight: normal;
+}
+
+#about-photo {
+
+    margin-top: 50px;
+    margin-right: 20px;
+
+}
+
+#content-shadyside table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid #000000;
+    padding: 3px;
+    border-spacing: 3px;
+}
+
+#content-downtown table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid #000000;
+    padding: 3px;
+    border-spacing: 3px;
+
+}
+
+#content-shadyside th,td {
+    height: 40px;
+    text-decoration: bold;
+    padding: 2px;
+    text-align: center;
+    border-width: 1px;
+    border-style: border;
+}
+
+#content-downtown th,td {
+    height: 40px;
+    text-decoration: bold;
+    padding: 2px;
+    text-align: center;
+    border-width: 1px;
+    border-style: border;
+}
+
+#container-graph {
+    width: 50%;
+    margin-right: 0;
+}
+
+
+#galleryThumbnail {
+    float: left;
+    margin: 10px;
+}
+
+
+
+#contact-text {
+    float: left;
+    padding: 1em;
+
+    margin-left: 10px;
+}
+
+#contact-text h1 {
+    font-size: 50px;
+    text-decoration: none;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-weight: normal;
+}
+
+#contact-text h2 {
+    font-size: 35px;
+    text-decoration: none;
+    margin-left: 50px;
+    margin-top: 80px;
+    font-weight: normal;
+}
+
+
+/*adapted from https://www.sanwebe.com/2013/10/css-html-form-styles*/
+.content-contact {
+
+    float: right;
+    margin-right: 50px;
+    margin-bottom: 50px;
+
+
+    max-width: 500px;
+    background: #F8F8F8;
+    padding: 30px 30px 20px 30px;
+    font: 12px "Comic Sans MS", cursive, sans-serif;
+    color: #666;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.content-contact h1 {
+    font: 24px "Comic Sans MS", cursive, sans-serif;
+    padding: 20px 0px 20px 40px;
+    display: block;
+    margin: -30px -30px 10px -30px;
+    color: #FFF;
+    background: #00a665;
+    text-shadow: 1px 1px 1px #949494;
+    border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    border-bottom:1px solid #89AF4C;
+
+}
+.content-contact h1>span {
+    display: block;
+    font-size: 11px;
+    color: #FFF;
+}
+
+.content-contact label {
+    display: block;
+    margin: 0px 0px 5px;
+}
+.content-contact label>span {
+    float: left;
+    margin-top: 10px;
+    color: #5E5E5E;
+}
+.content-contact input[type="text"], .content-contact input[type="email"], .content-contact textarea, .content-contact select {
+    color: #555;
+    height: 30px;
+    line-height:15px;
+    width: 100%;
+    padding: 0px 0px 0px 10px;
+    margin-top: 2px;
+    border: 1px solid #E5E5E5;
+    background: #FBFBFB;
+    outline: 0;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+    box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+    font: normal 14px/14px "Comic Sans MS", cursive, sans-serif;
+}
+.content-contact textarea{
+    height:100px;
+    padding-top: 10px;
+}
+
+.content-contact .button {
+    background-color: #00a665;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-border-radius: 5px;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #949494;
+    margin-left: 215px;
+    margin-top: 20px;
+}
+.content-contact .button:hover {
+    background-color:#80A24A;
+}
+
+
+
+
+
+
+html {
+    overflow-y: scroll;
+}
+
+
+iframe {
+    display: block;
+    margin: auto;
+}
+
+#tabs {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 100%;
+}
+
+/*adapted from http://keith-wood.name/uitabs.html*/
+
+#tabs { 
+    background: transparent; 
+    border: none; 
+} 
+#tabs .ui-widget-header { 
+    background: transparent; 
+    border: none; 
+    border-bottom: 1px solid #c0c0c0; 
+    -moz-border-radius: 0px; 
+    -webkit-border-radius: 0px; 
+    border-radius: 0px; 
+} 
+#tabs .ui-tabs-nav .ui-state-default { 
+    background: transparent; 
+    border: none; 
+} 
+#tabs .ui-tabs-nav .ui-state-active { 
+    background: transparent url(img/uiTabsArrow.png) no-repeat bottom center; 
+    border: none; 
+} 
+#tabs .ui-tabs-nav .ui-state-default a { 
+    color: #c0c0c0; 
+} 
+#tabs .ui-tabs-nav .ui-state-active a { 
+    color: #00a665; 
+}
+
+
+
+
+#tabs-s {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 100%;
+    width: 48%;
+    float: left;
+    background: transparent; 
+    border: none; 
+}
+
+/*adapted from http://keith-wood.name/uitabs.html*/
+
+#tabs-s .ui-tabs-nav { 
+    height: 2.35em; 
+    text-align: center; 
+} 
+#tabs-s .ui-tabs-nav li { 
+    display: inline-block; 
+    float: none; 
+    top: 0px; 
+    margin: 0em; 
+    padding-bottom: 0px; 
+}
+
+#tabs-s .ui-widget-header { 
+    background: transparent; 
+    border: none; 
+    border-bottom: 1px solid #D6E1CB; 
+    -moz-border-radius: 0px; 
+    -webkit-border-radius: 0px; 
+    border-radius: 0px; 
+} 
+#tabs-s .ui-tabs-nav .ui-state-default { 
+    background: transparent; 
+    border: none; 
+} 
+#tabs-s .ui-tabs-nav .ui-state-active { 
+    background: transparent url(img/uiTabsArrow.png) no-repeat bottom center; 
+    border: none; 
+} 
+#tabs-s .ui-tabs-nav .ui-state-default a { 
+    color: #D6E1CB; 
+} 
+#tabs-s .ui-tabs-nav .ui-state-active a { 
+    color: #00a665; 
+}
+
+#container-graph {
+    width: 500px;
+    height: 500px;
+}
+
+/*adapted from http://keith-wood.name/uitabs.html*/
+
+#tabs-d {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 100%;
+    width: 48%;
+    float: right;
+    background: transparent; 
+    border: none; 
+}
+
+#tabs-d .ui-tabs-nav { 
+    height: 2.35em; 
+    text-align: center; 
+} 
+#tabs-d .ui-tabs-nav li { 
+    display: inline-block; 
+    float: none; 
+    top: 0px; 
+    margin: 0em; 
+    padding-bottom: 0px; 
+}
+
+#tabs-d .ui-widget-header { 
+    background: transparent; 
+    border: none; 
+    border-bottom: 1px solid #D6E1CB; 
+    -moz-border-radius: 0px; 
+    -webkit-border-radius: 0px; 
+    border-radius: 0px; 
+} 
+#tabs-d .ui-tabs-nav .ui-state-default { 
+    background: transparent; 
+    border: none; 
+} 
+#tabs-d .ui-tabs-nav .ui-state-active { 
+    background: transparent url(img/uiTabsArrow.png) no-repeat bottom center; 
+    border: none; 
+} 
+#tabs-d .ui-tabs-nav .ui-state-default a { 
+    color: #D6E1CB; 
+} 
+#tabs-d .ui-tabs-nav .ui-state-active a { 
+    color: #00a665; 
+}
+
+#container-graph2 {
+    width: 500px;
+    height: 500px;
+}
+
